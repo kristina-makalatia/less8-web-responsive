@@ -1,0 +1,141 @@
+.container {
+  max-width: 1140px;
+  width: 80%;
+  margin: 0 auto;
+  background-color: lightblue;
+  height: 500px;
+}
+
+.section-bg {
+  padding: 96px 0;
+  background-color: #000;
+}
+.image-el {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.wraper {
+  display: flex;
+  column-gap: 25px;
+  row-gap: 20px;
+}
+.box {
+  max-width: 350px;
+  width: 100%;
+}
+.image-box {
+  width: 100%;
+}
+
+/* section styles */
+.container-block {
+  max-width: 1140px;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  column-gap: 133px;
+  background-color: lightseagreen;
+}
+.left-block {
+  width: 503.5px;
+}
+.right-block {
+  width: 503.5px;
+}
+.image-block-el {
+  width: 100%;
+}
+
+/* header styles */
+.navigationblock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-el {
+  background-color: lightgreen;
+  padding: 15px;
+}
+.ul-nav {
+  display: flex;
+  width: 250px;
+  justify-content: space-between;
+}
+.burger {
+  display: none;
+}
+
+.burger-bar {
+  width: 25px;
+  height: 25px;
+  background-color: #000;
+  border-radius: 50%;
+  position: relative;
+  display: none;
+}
+.line {
+  height: 1px;
+  background-color: #fff;
+  width: 60%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.line1 {
+  top: 30%;
+}
+.line3 {
+  top: 70%;
+}
+
+/*  */
+.bg-image {
+    background-image: url('../images/image.jpg');
+    width: 100%;
+    height: 564px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 1024px) {
+  .wraper {
+    /* flex-wrap: wrap;
+    justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+  }
+  .container-block {
+    flex-direction: column;
+  }
+  .left-block {
+    width: 100%;
+  }
+  .right-block {
+    width: 100%;
+    display: flex;
+    column-gap: 129px;
+  }
+}
+
+@media (max-width: 744px) {
+  .right-block {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .navigation {
+    display: none;
+  }
+  /* .burger {
+    display: block;
+  } */
+  .burger-bar  {
+    display: block;
+  }
+}
